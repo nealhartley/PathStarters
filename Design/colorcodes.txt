@@ -1,0 +1,3 @@
+Background light grey = #f2f2f2
+Deep Blue font = #26495c
+Light Blue = 35c5d3
