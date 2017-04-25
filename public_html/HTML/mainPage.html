@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="BlogApp">
+    <head>
+        <title>Path Starters</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Header bar for the site-->
+        <div class = "Header"></div>
+        
+        <!--the story for the team-->
+        <div class = "our_story"></div>
+        
+        <!--the slider button to switch between timeline view and community view-->
+        <div class = "slider_container">
+            
+            <!--the buttons for choosing, timeline will be default so we give it the active class-->
+            <div class = "timeline_button active"></div>
+            <div class ="community_button"></div>
+            
+        </div>
+        
+        <!--the container for the pathway view-->
+        <div class = "pathway_container" ng-controller="BlogController">
+            <h2 class = "pathway">OUR PATHWAY</h2>
+            
+            <!--each month needs to be its own thing-->
+            <div class = "month_container">
+                <!--within each month there needs to be bunch of posts-->
+                <div class = "post_container">
+                    
+                    <div class = "post">
+                        
+                        <h3 class = "post_date"></h3>
+                        
+                        <h3 class = "post_body"></h3>
+
+                        <div class = "post_image"></div>
+                        
+                        <div class = "like_system"></div>
+                        
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        
+    </body>
+</html>
