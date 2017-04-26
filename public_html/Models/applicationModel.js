@@ -11,7 +11,7 @@
 var PathwayApp = angular.module('PathwayApp', []);
 
 // Define the `Blogcontroller` controller on the `BlogApp` module
-PathwayApp.controller('pathwayController', function PathwayController($scope) {
+PathwayApp.controller('PathwayController', function PathwayController($scope) {
   //blog postings 
   
   //months that blogs can be a part of

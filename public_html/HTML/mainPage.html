@@ -4,42 +4,84 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html ng-app="BlogApp">
+<html ng-app="PathwayApp">
     <head>
         <title>Path Starters</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="../Models/applicationModel.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        
+        <link type="text/css" rel="stylesheet" href="../CSS/mainStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        
     </head>
+    
+    
     <body>
         <!--Header bar for the site-->
-        <div class = "Header"></div>
+        <div class = "header">
+            <!--the background for the header will be the balloon and we will shift it right-->
+            
+            <div class = "logo"></div>
+            <div class = "balloon_image"></div>
+        </div>
         
         <!--the story for the team-->
-        <div class = "our_story"></div>
+        <div class = "our_story light_blue">
+            
+            <div class = "story_header_container">
+            
+            <div class = "cloud_image"></div>
+            
+            <h2 class = "cloud deep_blue font_super_heavy"> OUR STORY</h2>
+           
+            </div>
+            
+            <p>Team Path Starters are working through the R9 Accelerator as part of a better 
+                of business initiative. Their mission is to provide fulfilling employment for 
+                those who are stuck on their journey.  57,000 people are currently receiving
+                health related benefit due to the impact their mental health condition has on
+                their ability to work. Mental health conditions have accounted for 97% of the
+                growth in health-related benefits in the last 10 years, and this is part of an
+                international trend.People with mental health conditions often have poor employment
+                outcomes. There are a number of barriers that are preventing people from finding 
+                and keeping a job. We know that appropriate work, combined with the right support,
+                is good for people’s mental health and that people with mental health conditions
+                can and want to work.</p>
+            
+            
+            
+            
+        </div>
         
         <!--the slider button to switch between timeline view and community view-->
-        <div class = "slider_container">
+        <div class = "slider_container deep_blue">
             
-            <!--the buttons for choosing, timeline will be default so we give it the active class-->
-            <div class = "timeline_button active"></div>
-            <div class ="community_button"></div>
+            <!--the buttons for choosing. Timeline will be default so we give it the active class-->
+            <div class = "timeline_button active" data-active = "true"><p>TIMELINE</p></div>
+            <div class ="community_button" data-active = "false"><p>COMMUNITY</p></div>
             
         </div>
         
         <!--the container for the pathway view-->
-        <div class = "pathway_container" ng-controller="BlogController">
-            <h2 class = "pathway">OUR PATHWAY</h2>
+        <div class = "pathway_container" ng-controller="PathwayController">
+            <h2 class = "pathway deep_blue">OUR PATHWAY</h2>
             
             <!--each month needs to be its own thing-->
-            <div class = "month_container">
+            <div class = "month_container" ng-repeat="month in months">
+                <h2 class = "month deep_blue">{{month.name}}</h2>
+                
                 <!--within each month there needs to be bunch of posts-->
-                <div class = "post_container">
+                <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name">
                     
                     <div class = "post">
                         
-                        <h3 class = "post_date"></h3>
+                        <h3 class = "post_date">{{post.date}}</h3>
                         
-                        <h3 class = "post_body"></h3>
+                        <div class = "post_body">{{post.description}}</div>
 
                         <div class = "post_image"></div>
                         
@@ -47,14 +89,69 @@ and open the template in the editor.
                         
                     </div>
                 
+                    
                 </div>
                 
+                <div style="clear:both;"></div>
             </div>
+            
+            <h2 class= "pitch_month">PITCH DAY</h2>
             
         </div>
         
         
+        <div class = "our_team hidden">We're a team woo</div>
         
+        
+        
+        <script>
+            
+            //these are the toggle button functions. incharge of switching the classes
+            //makes pathway and community views come in and out of view
+            $('.community_button').on("click", function(){
+                
+                if($(this).data("active") === false){
+                //toggling the buttons classes so that the styling changes so you can see which is active
+                $(".community_button").toggleClass("active");
+                $(".timeline_button").toggleClass("active");
+                
+                //toggling the community and pathway div so they becomes visible/not visible
+                $(".pathway_container").toggleClass("hidden");
+                $(".our_team").toggleClass("hidden");
+                
+                
+                $(this).data("active", true);
+                $(".timeline_button").data("active", false);
+                }
+            });
+            
+            
+            $('.timeline_button').on("click", function(){
+                
+                if($(this).data("active") === false){
+                //toggling the buttons classes so that the styling changes so you can see which is active
+                $(".community_button").toggleClass("active");
+                $(".timeline_button").toggleClass("active");
+                
+                
+                //toggling the community and pathway div so they becomes visible/not visible
+                $(".pathway_container").toggleClass("hidden");
+                $(".our_team").toggleClass("hidden");
+                
+                
+                $(this).data("active", true);
+                $(".community_button").data("active", false);
+                }
+            });
+            
+            
+            
+         
+            
+        </script>
         
     </body>
+    
+    
+    
 </html>

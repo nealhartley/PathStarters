@@ -8,3 +8,175 @@ and open the template in the editor.
     Author     : Neal
 */
 
+
+
+/*random stylings for colors and any other multi used styling*/
+
+.deep_blue{
+    color: #26495c;
+}
+
+.light_blue{
+    color: #35c5d3;
+}
+
+.font_light{
+    font-weight: 200;
+}
+
+.font_normal{
+    font-weight: 400;
+}
+
+.font_heavy{
+    font-weight: 600;
+}
+
+.font_super_heavy{
+    font-weight: 800;
+}
+
+/*indiviualised styling*/
+body{
+     margin: auto;
+     width:100%;
+     text-align: center;
+     font-family: 'Dosis', sans-serif;
+     color: #4b5254;
+     background-color: #f2f2f2;
+}
+
+
+.header{
+    width: 100%;
+    padding-bottom: 1em;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.balloon_image{
+    
+    position: absolute;
+    left: 90%;
+    top: 1.5em;
+    
+    background-image: url("../Images/Logos/balloon.png");
+    background-size: 100% 100%;
+    
+    width: 7%;
+    padding-bottom: 6%;
+}
+
+.logo{
+    background-image: url("../Images/Logos/logo_pathstarters.png");
+    background-size: 100% 100%;
+    width: 20%;
+    padding-bottom: 10%;
+    margin: auto;
+}
+
+/*the story block just below header*/
+.our_story{
+    border: solid 4px;
+    border-radius: 2em;
+    padding-bottom: 1em;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+.our_story h2{
+    font-size: 4em;
+    
+}
+
+.story_header_container{
+    position: relative;
+}
+
+.our_story p{
+    color: #26495c;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3em;
+    font-weight: 500;
+    text-align: justify;
+    
+}
+
+.cloud_image{
+    
+    top: 1em;
+    left: 5%;
+    
+    position: absolute;
+    
+    z-index: 2;
+    width: calc(1.6*3em);
+    padding-bottom:3.5em;
+    
+    background-image: url("../Images/Logos/cloud.png");
+    background-size: 100% 100%;
+}
+
+/*styling for the slider to choose between team view and blog view*/
+.slider_container{
+    width: 40%;
+    margin: auto;
+}
+
+.timeline_button{
+    width:49%;
+    display: inline-block;
+    
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.community_button{
+    width:49%;
+    display: inline-block;
+    
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.active{
+    background-color: #26495c;
+    color: #f2f2f2;
+    border-radius: 1em;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+
+/*blog view*/
+
+.pathway{
+    font-size: 7em;
+}
+
+.month_container{
+    
+}
+
+
+.post_container{
+    width:50%;
+    height: auto;
+    padding-bottom: 1em;
+    border-right: solid 5px;
+}
+
+.post_container:nth-child(odd){
+    float:right;
+    border-left: solid 5px;
+    border-right: none;
+}
+
+.post{
+    width: 100%;
+}
