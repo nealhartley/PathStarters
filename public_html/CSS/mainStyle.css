@@ -44,21 +44,24 @@ body{
      font-family: 'Dosis', sans-serif;
      color: #4b5254;
      background-color: #f2f2f2;
+     background-image: url("../Images/Logos/clouds2.png");
 }
 
 
 .header{
+    
     width: 100%;
     padding-bottom: 1em;
-    background-color: white;
-    margin-bottom: 1em;
+    /*background-color: white;*/
+    /*margin-bottom: 1em;*/
+    padding-top: 0.5em;
 }
 
 .balloon_image{
     
     position: absolute;
     left: 90%;
-    top: 1.5em;
+    top: 2em;
     
     background-image: url("../Images/Logos/balloon.png");
     background-size: 100% 100%;
@@ -68,11 +71,13 @@ body{
 }
 
 .logo{
+    
     background-image: url("../Images/Logos/logo_pathstarters.png");
     background-size: 100% 100%;
-    width: 20%;
-    padding-bottom: 10%;
-    margin: auto;
+    width: 15%;
+    padding-bottom: 7%;
+    margin-left: 5%;
+    margin-top: 1em;
 }
 
 /*the story block just below header*/
@@ -124,6 +129,9 @@ body{
 .slider_container{
     width: 40%;
     margin: auto;
+    margin-top: 7em;
+    background-color: white;
+    border-radius: 0.2em;
 }
 
 .timeline_button{
@@ -132,6 +140,22 @@ body{
     
     cursor: pointer;
     font-size: 1.5em;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+}
+
+.timeline_button p{
+        padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
 }
 
 .community_button{
@@ -140,12 +164,28 @@ body{
     
     cursor: pointer;
     font-size: 1.5em;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+}
+
+.community_button p{
+        padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
 }
 
 .active{
     background-color: #26495c;
     color: #f2f2f2;
-    border-radius: 1em;
+    border-radius: 0.2em;
 }
 
 .hidden{
