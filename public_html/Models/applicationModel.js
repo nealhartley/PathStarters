@@ -22,6 +22,10 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
       
     {
         name: 'April'
+    },
+    
+    {
+        name: 'May'
     }
   ];
   
@@ -42,9 +46,29 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
     {
         month : 'April',
         date : '4th April',
-        description : 'today Scott spoke too loud about Jonnie and Pauls feud and now Jonnies clued in '
+        description : 'Second stipend should be coming through soon '
+    },
+    
+    {
+        month : 'May',
+        date : '4th May',
+        description : 'Still no stipend, oh well, I have enough savings to last another week '
+    },
+    
+    {
+        month : 'May',
+        date : '15th May',
+        description : 'NO STIPEND! We have had to start eating each other. The life of an entrepreneur is harder than I ever could have imagined '
+    },
+    
+    {
+        month : 'May',
+        date : '16th May',
+        description : 'I am the last one left. At this point I no longer remember why I am coming here every day '
     }
       
   ];
+  
+  
 });
 

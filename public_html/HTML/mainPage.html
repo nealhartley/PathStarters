@@ -17,6 +17,9 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="../CSS/mainStyle.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         
+        <link rel="shortcut icon" href="../Images/Logos/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../Images/Logos/favicon.ico" type="image/x-icon">
+        
     </head>
     
     
@@ -72,8 +75,8 @@ and open the template in the editor.
             <div class = "pathway_container" ng-controller="PathwayController">
                 <h2 class = "pathway deep_blue">OUR PATHWAY</h2>
 
-                <!--each month needs to be its own thing-->
-                <div class = "month_container" ng-repeat="month in months">
+                <!--each month needs to be its own thing. each needs it index as a class in order to access the expanding svg line-->
+                <div class = "month_container {{$index}}" ng-repeat="month in months">
                     <h2 class = "month deep_blue">{{month.name}}</h2>
 
                     <!--within each month there needs to be bunch of posts-->
@@ -97,9 +100,17 @@ and open the template in the editor.
                     
                     
                     
-                    <svg class="vertical_line" width="1" height="10" >
-                    
-                        <line class ="line" x1="0" y1="0" x2="0" y2="300" stroke="#ff8a65" stroke-width="5"></line>
+                    <svg class="vertical_line" width="16" height="heightofcontainer" >
+                       
+                        <line class ="line" x1="10" y1="25" x2="10" y2="90%" stroke="#26495c" stroke-width="5"></line>
+                        <!--top circle-->
+                        <circle class = "circle" cx = "10" cy="25" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "10" cy="25" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        
+                        <!--bottom circle-->
+                        <circle class = "circle" cx = "10" cy="90%" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "10" cy="90%" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        
                     </svg>
                     
                     
@@ -109,7 +120,7 @@ and open the template in the editor.
                     
                 </div>
 
-                <h2 class= "pitch_month">PITCH DAY</h2>
+                <h2 class= "pitch_month deep_blue">PITCH DAY</h2>
                 
               
             </div>
@@ -199,24 +210,10 @@ and open the template in the editor.
                 }
             });
             
-            /*
-            var i = 1;
-            //setting the height of the vertical svg line to the height of the its parent month div
-            $(".vertical_line").each(function(index, item){
-                $(item).addClass("line" + i);
-                
-                $(".line"+1).css("height",$(this).parent().height());
-                console.log("I am number " + i + " and my parents height: " + $(item).parent().height());
-                i++;
-            });
-            */
-           
-           $(".month_container").each(function(index, item){
-               console.log(index);
-           });
             
             
          
+   
             
         </script>
         

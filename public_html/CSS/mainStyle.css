@@ -221,23 +221,37 @@ body{
 }
 
 .month_container{
-    padding-bottom: 2em;
+    padding-bottom: 6em;
     position: relative;
 }
 
-.post_container{
-    width:50%;
-    height: auto;
 
+
+.post_container{
+    width:51%;
+    height: auto;
+    position: relative;
+    float: left;
 }
+
+
 
 .post_container:nth-child(odd){
     float:right;
+    width:51%;
+    height: auto;
+    position: relative;
 
 }
 
 .post{
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 2em;
+    padding-top: 0.5em;
+    border-radius: 1em;
+    
 }
 
 .vertical_line{
@@ -245,12 +259,12 @@ body{
    
     z-index: -5;
     
-    width: 5px;
+    width: 100%;
     
     
-    top:4em;
-    left:50%;
-    margin:auto;
+    top:1em;
+    left:49%;
+    
   
 }
 
@@ -260,7 +274,16 @@ body{
     
 }
 
+.pitch_month{
+    font-size: 5em;
+    padding-bottom: 1em;
+}
+
+
+
+/*-----------------------------------*/
 /*The view for our community and team*/
+/*-----------------------------------*/
 .our_team{
     margin-top: 3em;
     position: absolute;
