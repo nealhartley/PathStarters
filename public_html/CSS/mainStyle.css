@@ -45,6 +45,7 @@ body{
      color: #4b5254;
      background-color: #f2f2f2;
      background-image: url("../Images/Logos/clouds2.png");
+     background-size: 100% auto;
 }
 
 
@@ -145,8 +146,7 @@ body{
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    -webkit-margin-before: 0em !important;
-    -webkit-margin-after: 0em !important;
+
 }
 
 .timeline_button p{
@@ -169,12 +169,11 @@ body{
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    -webkit-margin-before: 0em !important;
-    -webkit-margin-after: 0em !important;
+
 }
 
 .community_button p{
-        padding-top: 0;
+    padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -190,33 +189,170 @@ body{
 
 .hidden{
     visibility: hidden;
+    opacity: 0;
+    
+        transition: visiblity 0s 2s, opacity 0.5s linear;
+        -webkit-transition: visiblity 0s 2s, opacity 0.5s linear;
+        -moz-transition: visiblity 0s 2s, opacity 0.5s linear;
 }
 
+/*styling for the container that holds the timeline and community*/
+
+.switch_container{
+    
+    position: relative;
+}
 
 /*blog view*/
+
+
+.pathway_container{
+    position: absolute;
+    width: 100%;
+    
+        transition: visiblity 0s 1s, opacity 0.5s linear;
+        -webkit-transition: visiblity 0s 1s, opacity 0.5s linear;
+        -moz-transition: visiblity 0s 1s, opacity 0.5s linear;
+}
+
 
 .pathway{
     font-size: 7em;
 }
 
 .month_container{
-    
+    padding-bottom: 2em;
+    position: relative;
 }
-
 
 .post_container{
     width:50%;
     height: auto;
-    padding-bottom: 1em;
-    border-right: solid 5px;
+
 }
 
 .post_container:nth-child(odd){
     float:right;
-    border-left: solid 5px;
-    border-right: none;
+
 }
 
 .post{
     width: 100%;
+}
+
+.vertical_line{
+    position: absolute;
+   
+    z-index: -5;
+    
+    width: 5px;
+    
+    
+    top:4em;
+    left:50%;
+    margin:auto;
+  
+}
+
+.line{
+    height: 100%;
+    
+    
+}
+
+/*The view for our community and team*/
+.our_team{
+    margin-top: 3em;
+    position: absolute;
+    width: 100%;
+    
+        transition: visiblity 0s 1s, opacity 1s linear;
+        -webkit-transition: visiblity 0s 1s, opacity 1s linear;
+        -moz-transition: visiblity 0s 1s, opacity 1s linear;
+}
+
+.profiles{
+    padding-top: 3em;
+}
+
+.profiles h2{
+    color: #DF0096;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+}
+
+.profile_images_container{
+    
+    width: 100%;
+}
+
+.profile{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20%;
+    padding-top: 2em;
+    padding-bottom: 8em;
+}
+
+.profile:hover{
+    padding-bottom: 6em;
+    cursor: pointer;
+   
+}
+
+.profile h3{
+    color: #DF0096;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    
+}
+
+.profile p{
+    font-weight: 500;
+    color: #979797;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    
+}
+
+.profile_image{
+    
+    width: 50%;
+    padding-bottom: 90%;
+    margin: auto;
+    
+}
+
+
+/*PROFILE IMAGES*/
+.kenyon{
+    background-image: url("../images/Logos/Kenyon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+      
+}
+
+
+.scott{
+    background-image: url("../images/Logos/Scott.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+
+.neal{
+    background-image: url("../images/Logos/Neal.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+
+.paul{
+    background-image: url("../images/Logos/Paul.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
 }

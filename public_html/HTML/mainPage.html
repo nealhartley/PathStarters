@@ -66,43 +66,98 @@ and open the template in the editor.
             
         </div>
         
-        <!--the container for the pathway view-->
-        <div class = "pathway_container" ng-controller="PathwayController">
-            <h2 class = "pathway deep_blue">OUR PATHWAY</h2>
-            
-            <!--each month needs to be its own thing-->
-            <div class = "month_container" ng-repeat="month in months">
-                <h2 class = "month deep_blue">{{month.name}}</h2>
-                
-                <!--within each month there needs to be bunch of posts-->
-                <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name">
-                    
-                    <div class = "post">
-                        
-                        <h3 class = "post_date">{{post.date}}</h3>
-                        
-                        <div class = "post_body">{{post.description}}</div>
+        <div class = "switch_container">
+        
+            <!--the container for the pathway view-->
+            <div class = "pathway_container" ng-controller="PathwayController">
+                <h2 class = "pathway deep_blue">OUR PATHWAY</h2>
 
-                        <div class = "post_image"></div>
-                        
-                        <div class = "like_system"></div>
-                        
+                <!--each month needs to be its own thing-->
+                <div class = "month_container" ng-repeat="month in months">
+                    <h2 class = "month deep_blue">{{month.name}}</h2>
+
+                    <!--within each month there needs to be bunch of posts-->
+                    <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name">
+
+                        <div class = "post">
+
+                            <h3 class = "post_date">{{post.date}}</h3>
+
+                            <div class = "post_body">{{post.description}}</div>
+
+                            <div class = "post_image"></div>
+
+                            <div class = "like_system"></div>
+
+                        </div>
+
+
                     </div>
+                    
+                    
+                    
+                    
+                    <svg class="vertical_line" width="1" height="10" >
+                    
+                        <line class ="line" x1="0" y1="0" x2="0" y2="300" stroke="#ff8a65" stroke-width="5"></line>
+                    </svg>
+                    
+                    
+                    <div style="clear:both;"></div>
+                    
+                    
+                    
+                </div>
+
+                <h2 class= "pitch_month">PITCH DAY</h2>
                 
+              
+            </div>
+
+
+            <div class = "our_team hidden">
+                
+                
+                        <!--profiles section, contains the descriptions of each team member-->
+        <div class = "profiles">
+            <h2>Our Team</h2>
+            
+            <div class = "profile_images_container">
+                
+                <div class = "profile">
+                    <div class = "profile_image kenyon"></div>
+                    <h3>KENYON</h3>
+                    <p>THE DESIGNER</p>
                     
                 </div>
                 
-                <div style="clear:both;"></div>
+                <div class = "profile">
+                    <div class = "profile_image scott"></div>
+                    <h3>SCOTT</h3>
+                    <p>THE HUSTLER</p>
+                    
+                </div>
+                
+                <div class = "profile">
+                    <div class = "profile_image neal"></div>
+                    <h3>NEAL</h3>
+                    <p>THE DEVELOPER</p>
+                    
+                </div>
+                
+                <div class = "profile">
+                    <div class = "profile_image paul"></div>
+                    <h3>PAUL</h3>
+                    <p>THE VISIONARY</p>
+                    
+                </div>
             </div>
-            
-            <h2 class= "pitch_month">PITCH DAY</h2>
-            
         </div>
+                
+                
+            </div>
         
-        
-        <div class = "our_team hidden">We're a team woo</div>
-        
-        
+        </div>
         
         <script>
             
@@ -144,6 +199,21 @@ and open the template in the editor.
                 }
             });
             
+            /*
+            var i = 1;
+            //setting the height of the vertical svg line to the height of the its parent month div
+            $(".vertical_line").each(function(index, item){
+                $(item).addClass("line" + i);
+                
+                $(".line"+1).css("height",$(this).parent().height());
+                console.log("I am number " + i + " and my parents height: " + $(item).parent().height());
+                i++;
+            });
+            */
+           
+           $(".month_container").each(function(index, item){
+               console.log(index);
+           });
             
             
          
