@@ -69,6 +69,14 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
       
   ];
   
+  $scope.counter = true;
+  
+  $scope.setCounter = function(bool){
+      
+      $scope.counter = bool;
+      
+  };
+  
   
 });
 

@@ -33,7 +33,7 @@ and open the template in the editor.
         </div>
         
         <!--the story for the team-->
-        <div class = "our_story light_blue">
+        <div class = "our_story light_blue roundy_corners">
             
             <div class = "story_header_container">
             
@@ -56,16 +56,68 @@ and open the template in the editor.
                 can and want to work.</p>
             
             
-            
-            
+        </div>
+        
+        <div class = "team_intro">
+            <p>Time to get to know the team. Scroll over our pictures to let us introduce ourselves. </p>
+        </div>  
+                    
+        <div class = "profile_images_container">
+
+            <div class = "profile">
+                <h3>Hi!<br>I'm Kenyon</h3>
+
+                <svg class ="triangle" width="150px" height="50px">
+                    <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                </svg>
+
+
+                <div class = "profile_image kenyon"></div>
+
+
+            </div>
+
+            <div class = "profile">
+                <h3>Hi!<br>I'm Scott</h3>
+                <svg class ="triangle" width="150px" height="50px">
+                    <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                </svg>
+                <div class = "profile_image scott"></div>
+
+
+
+            </div>
+
+            <div class = "profile">
+                <h3>Hi!<br>I'm Neal</h3>
+                <svg class ="triangle" width="150px" height="50px">
+                    <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                </svg>
+                <div class = "profile_image neal"></div>
+
+
+
+            </div>
+
+            <div class = "profile">
+                <h3>Hi!<br>I'm Paul</h3>
+                <svg class ="triangle" width="150px" height="50px">
+                    <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                </svg>
+                <div class = "profile_image paul"></div>
+
+
+
+            </div>
+
         </div>
         
         <!--the slider button to switch between timeline view and community view-->
-        <div class = "slider_container deep_blue">
+        <div class = "slider_container deep_blue roundy_corners">
             
             <!--the buttons for choosing. Timeline will be default so we give it the active class-->
-            <div class = "timeline_button active" data-active = "true"><p>TIMELINE</p></div>
-            <div class ="community_button" data-active = "false"><p>COMMUNITY</p></div>
+            <div class = "timeline_button active roundy_corners" data-active = "true"><p>TIMELINE</p></div>
+            <div class ="community_button roundy_corners" data-active = "false"><p>COMMUNITY</p></div>
             
         </div>
         
@@ -80,10 +132,22 @@ and open the template in the editor.
                     <h2 class = "month deep_blue">{{month.name}}</h2>
 
                     <!--within each month there needs to be bunch of posts-->
-                    <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name">
-
-                        <div class = "post">
-
+                    <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name" >
+                        
+                        <!--line for alternating div-->
+                        <div class ="lines_timeline" style = "float: left; margin-left: 2%;" ng-if = "counter === false"><!--the lines for an odd numbered post-->
+                        
+                            <svg class="horizontal_line" width="widthofcontainer" height="20" >
+                                <line class ="line_across" x1="2" y1="10" x2="100%" y2="10" stroke="#26495c" stroke-width="4"></line>
+                                <circle class = "circle" cx = "17%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                            </svg>
+                            {{setCounter(true);}}
+                        </div>
+                        
+                        
+                        <div class = "post roundy_corners">
+                            
+                            
                             <h3 class = "post_date">{{post.date}}</h3>
 
                             <div class = "post_body">{{post.description}}</div>
@@ -93,11 +157,28 @@ and open the template in the editor.
                             <div class = "like_system"></div>
 
                         </div>
+                        
+                        
+                            <!--line that links a right side post to the middle-->
+                        
+                        <div class ="lines_timeline" style = "float: right; margin-right: 2%;" ng-if = "counter"><!--the lines for an even numbered post-->
+                        
+                            <svg class="horizontal_line" width="widthofcontainer" height="20" >
+                                <line class ="line_across" x1="0" y1="10" x2="98%" y2="10" stroke="#26495c" stroke-width="4"></line>
+                                <circle class = "circle" cx = "83%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                            </svg>
+                    
+                            {{setCounter(false);}}
+                        </div>
+                        
+                        
+                   
 
 
                     </div>
                     
-                    
+                    <!--need to reset the bool that controls wether a post is even or odd-->
+                    {{setCounter(true);}}
                     
                     
                     <svg class="vertical_line" width="16" height="heightofcontainer" >
@@ -114,6 +195,8 @@ and open the template in the editor.
                     </svg>
                     
                     
+                    
+                    
                     <div style="clear:both;"></div>
                     
                     
@@ -128,42 +211,111 @@ and open the template in the editor.
 
             <div class = "our_team hidden">
                 
-                
+                 
                         <!--profiles section, contains the descriptions of each team member-->
-        <div class = "profiles">
-            <h2>Our Team</h2>
-            
-            <div class = "profile_images_container">
-                
-                <div class = "profile">
-                    <div class = "profile_image kenyon"></div>
-                    <h3>KENYON</h3>
-                    <p>THE DESIGNER</p>
+                <div class = "profiles">
+                    <h2>OUR TEAM</h2>
                     
-                </div>
                 
-                <div class = "profile">
-                    <div class = "profile_image scott"></div>
-                    <h3>SCOTT</h3>
-                    <p>THE HUSTLER</p>
+                <div class = "team_intro">
+                    <p>Time to get to know the team. Scroll over our pictures to let us introduce ourselves. </p>
+                </div>  
                     
+                    <div class = "profile_images_container">
+
+                        <div class = "profile">
+                            <h3>Hi!<br>I'm Kenyon</h3>
+
+                            <svg class ="triangle" width="150px" height="50px">
+                                <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                            </svg>
+
+
+                            <div class = "profile_image kenyon"></div>
+
+
+                     </div>
+
+                        <div class = "profile">
+                            <h3>Hi!<br>I'm Scott</h3>
+                            <svg class ="triangle" width="150px" height="50px">
+                                <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                            </svg>
+                            <div class = "profile_image scott"></div>
+
+
+
+                        </div>
+
+                        <div class = "profile">
+                            <h3>Hi!<br>I'm Neal</h3>
+                            <svg class ="triangle" width="150px" height="50px">
+                                <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                            </svg>
+                            <div class = "profile_image neal"></div>
+
+
+
+                        </div>
+
+                        <div class = "profile">
+                            <h3>Hi!<br>I'm Paul</h3>
+                            <svg class ="triangle" width="150px" height="50px">
+                                <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
+                            </svg>
+                            <div class = "profile_image paul"></div>
+
+
+
+                        </div>
+
+
+
+
+                        <div class = "Mentors">
+                            <h2>OUR MENTORS</h2>
+
+                            <div class = "profile_images_container">
+
+                        <div class = "mentor profile">
+                            <div class = "profile_image kenyon"></div>
+                            <h3>DAVE</h3>
+
+                        </div>
+
+                        <div class = "mentor profile">
+                            <div class = "profile_image scott"></div>
+                            <h3>HAMISH</h3>
+
+                        </div>
+
+                        <div class = "mentor profile">
+                            <div class = "profile_image neal"></div>
+                            <h3>KRISTENE</h3>
+
+                        </div>
+
+                        <div class = "mentor profile">
+                            <div class = "profile_image paul"></div>
+                            <h3>IAN</h3>
+
+                        </div>
+
+                        <div class = "mentor profile">
+                            <div class = "profile_image paul"></div>
+                            <h3>KAMAL</h3>
+
+                        </div>
+
+                        </div>
+                    </div>
+
+
+                        <div class = "our_contacts">
+                            <h2>GREAT PEOPLE</h2>
+
+                        </div>    
                 </div>
-                
-                <div class = "profile">
-                    <div class = "profile_image neal"></div>
-                    <h3>NEAL</h3>
-                    <p>THE DEVELOPER</p>
-                    
-                </div>
-                
-                <div class = "profile">
-                    <div class = "profile_image paul"></div>
-                    <h3>PAUL</h3>
-                    <p>THE VISIONARY</p>
-                    
-                </div>
-            </div>
-        </div>
                 
                 
             </div>
