@@ -136,11 +136,11 @@ and open the template in the editor.
                     <div class = "post_container" ng-repeat="post in posts" ng-if="post.month === month.name" >
                         
                         <!--line for alternating div-->
-                        <div class ="lines_timeline" style = "float: left; margin-left: 2%;" ng-if = "counter === false"><!--the lines for an odd numbered post-->
+                        <div class ="lines_timeline" style = "float: left;" ng-if = "counter === false"><!--the lines for an odd numbered post-->
                         
                             <svg class="horizontal_line" width="widthofcontainer" height="20" >
-                                <line class ="line_across" x1="2" y1="10" x2="100%" y2="10" stroke="#26495c" stroke-width="4"></line>
-                                <circle class = "circle" cx = "17%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                                <line class ="line_across" x1="38.5%" y1="10" x2="100%" y2="10" stroke="#26495c" stroke-width="4"></line>
+                                <circle class = "circle" cx = "38.5%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
                             </svg>
                             {{setCounter(true);}}
                         </div>
@@ -162,11 +162,11 @@ and open the template in the editor.
                         
                             <!--line that links a right side post to the middle-->
                         
-                        <div class ="lines_timeline" style = "float: right; margin-right: 2%;" ng-if = "counter"><!--the lines for an even numbered post-->
+                        <div class ="lines_timeline" style = "float: right;" ng-if = "counter"><!--the lines for an even numbered post-->
                         
                             <svg class="horizontal_line" width="widthofcontainer" height="20" >
-                                <line class ="line_across" x1="0" y1="10" x2="98%" y2="10" stroke="#26495c" stroke-width="4"></line>
-                                <circle class = "circle" cx = "83%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                                <line class ="line_across" x1="0" y1="10" x2="61.5%" y2="10" stroke="#26495c" stroke-width="4"></line>
+                                <circle class = "circle" cx = "61.5%" cy="10" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
                             </svg>
                     
                             {{setCounter(false);}}
@@ -182,16 +182,16 @@ and open the template in the editor.
                     {{setCounter(true);}}
                     
                     
-                    <svg class="vertical_line" width="16" height="heightofcontainer" >
+                    <svg class="vertical_line" width="40%" height="heightofcontainer" >
                        
-                        <line class ="line" x1="10" y1="25" x2="10" y2="90%" stroke="#26495c" stroke-width="5"></line>
+                        <line class ="line" x1="50%" y1="25" x2="50%" y2="90%" stroke="#26495c" stroke-width="5"></line>
                         <!--top circle-->
-                        <circle class = "circle" cx = "10" cy="25" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
-                        <circle class = "circle" cx = "10" cy="25" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "50%" cy="25" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "50%" cy="25" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
                         
                         <!--bottom circle-->
-                        <circle class = "circle" cx = "10" cy="90%" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
-                        <circle class = "circle" cx = "10" cy="90%" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "50%" cy="90%" r="8" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
+                        <circle class = "circle" cx = "50%" cy="90%" r="2" stroke="#26495c" stroke-width="2" fill="#f2f2f2"/>
                         
                     </svg>
                     
