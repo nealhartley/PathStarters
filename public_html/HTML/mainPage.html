@@ -430,7 +430,25 @@ and open the template in the editor.
             });
             
             
+            //making a logo switcher. probably gonna make it so it switches on space press or something.
             
+            var logos = ['logo_pathstarters','logo2','logo3','logo4'];
+               var i = 0;
+               
+            $(window).on( "keyup" , function (e) {
+                console.log(e.keyCode);
+                if (e.keyCode === 13 || e.which === 13) {
+                    console.log('url(../Images/Logos/'+logos[i]+'.png)');
+                    $(".logo").css("background-image", "none");
+                    $(".logo").css('background-image', 'url(../Images/Logos/'+logos[i]+'.png)');                    
+                    i++;
+                    
+                    if(i>logos.length-1){
+                        i=0;
+                    }
+                    
+                }
+            });
          
    
             
