@@ -66,7 +66,13 @@ and open the template in the editor.
         <div class = "profile_images_container">
 
             <div class = "profile">
-                <h3>Hi!<br>I'm Kenyon</h3>
+                
+                <div class="profile_name">
+                    <h3>Hi!<br>I'm Kenyon!</h3>
+                    <a href="http://www.facebook.com" >
+                        <div class = "linkedIn"></div>
+                    </a>
+                </div>
 
                 <svg class ="triangle" width="150px" height="50px">
                     <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
@@ -79,7 +85,17 @@ and open the template in the editor.
             </div>
 
             <div class = "profile">
-                <h3>Hi!<br>I'm Scott</h3>
+                
+                
+                <div class="profile_name">
+                <h3>Hi!<br>I'm Scott!</h3>
+                    <a href="http://www.facebook.com" >
+                        <div class = "linkedIn"></div>
+                    </a>
+                </div>
+                
+                
+                
                 <svg class ="triangle" width="150px" height="50px">
                     <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
                 </svg>
@@ -90,7 +106,16 @@ and open the template in the editor.
             </div>
 
             <div class = "profile">
-                <h3>Hi!<br>I'm Neal</h3>
+                
+                
+                <div class="profile_name">
+                <h3>Hi!<br>I'm Neal!</h3>
+                    <a href="http://www.facebook.com" >
+                        <div class = "linkedIn"></div>
+                    </a>                
+                </div>
+                
+                
                 <svg class ="triangle" width="150px" height="50px">
                     <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
                 </svg>
@@ -101,7 +126,16 @@ and open the template in the editor.
             </div>
 
             <div class = "profile">
-                <h3>Hi!<br>I'm Paul</h3>
+                
+               
+                <div class="profile_name">
+                <h3>Hi!<br>I'm Paul!</h3>
+                    <a href="http://www.facebook.com" >
+                        <div class = "linkedIn"></div>
+                    </a>
+                </div>
+                
+                
                 <svg class ="triangle" width="150px" height="50px">
                     <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
                 </svg>
@@ -225,7 +259,12 @@ and open the template in the editor.
                     <div class = "profile_images_container">
 
                         <div class = "profile">
-                            <h3>Hi!<br>I'm Kenyon</h3>
+                            
+                            <div class = "profile_name">
+                                <h3>Hi!<br>I'm Kenyon</h3>
+                                
+                                <div class = "linkedIn"></div>
+                            </div>
 
                             <svg class ="triangle" width="150px" height="50px">
                                 <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
@@ -238,7 +277,11 @@ and open the template in the editor.
                         </div>
 
                         <div class = "profile">
-                            <h3>Hi!<br>I'm Scott</h3>
+                            
+                            <div class = "profile_name">
+                                <h3>Hi!<br>I'm Scott</h3>
+                            </div>
+                            
                             <svg class ="triangle" width="150px" height="50px">
                                 <polyline points="20 0, 50 30, 50 0" fill="white" stroke="white"/>
                             </svg>
@@ -316,14 +359,33 @@ and open the template in the editor.
                             <h2>GREAT PEOPLE</h2>
 
                         </div>    
+                    </div>
+                
+                
                 </div>
-                
-                
             </div>
+            
+            
+            
+        </div>
         
+        <div class = "footer">
+                <h2>CONTACT US</h2>
+                <p>scott@gotoworkonmentalhealth.co.nz</p>
+                <p>Plimmer Towers, Lambton Quay, Wellington 6021</p>
+                
         </div>
         
         <script>
+            
+            //at the start of the thing we want to make sure the switch container height is set to the height of
+            //the correct internal object. in this case the default is the pathway so we set this
+            
+            //keeps getting incorrect numbers so we enclosed as a function called on load
+            $(window).on('load',function(){
+                $(".switch_container").height($(".pathway_container").height());
+                console.log("outer height" + $(".pathway_container").outerHeight());
+            });
             
             //these are the toggle button functions. incharge of switching the classes
             //makes pathway and community views come in and out of view
@@ -341,6 +403,8 @@ and open the template in the editor.
                 
                 $(this).data("active", true);
                 $(".timeline_button").data("active", false);
+                
+                $(".switch_container").height($(".our_team").height());
                 }
             });
             
@@ -360,6 +424,8 @@ and open the template in the editor.
                 
                 $(this).data("active", true);
                 $(".community_button").data("active", false);
+                
+                $(".switch_container").height($(".pathway_container").height());
                 }
             });
             
