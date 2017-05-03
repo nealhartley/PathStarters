@@ -298,6 +298,11 @@ body{
     
 }
 
+.post_body{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .vertical_line{
     position: absolute;
    
@@ -319,9 +324,16 @@ body{
 }
 
 
+.pitch_date{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
 .pitch_month{
     font-size: 5em;
     padding-bottom: 0em;
+    padding-top: 0em;
+    -webkit-margin-before: 0em;
 }
 
 
@@ -542,6 +554,65 @@ body{
 .survey a:hover{
     color: #35c5d3;
    
+}
+
+
+ /* for phone*/ 
+@media screen and (max-width: 850px){
+
+    .cloud_image{
+        visibility: hidden;
+    }
+
+    .pathway{
+        font-size: 3em;
+    }
+    
+    .post_container{
+        
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+    }
+    
+    .post_container:nth-child(odd) {
+    width: 100%;
+    margin-bottom: 1em;
+    }
+    
+    .post_body{
+        
+        width:90%;
+        padding-left: 5%;
+        
+    }    
+    
+    .post{
+        width:100%;
+    }
+    
+    
+    
+    .post_container svg{
+        display: none;
+    }
+    
+    
+    .footer{
+        width: 100%;
+        padding-bottom: 30%;
+        
+    }
+    
+    .footer h2{
+        padding-top: 40%;
+    }
+    
+    .footer p{
+        width:40%;
+        margin: auto;
+    }
+
 }
 
 
