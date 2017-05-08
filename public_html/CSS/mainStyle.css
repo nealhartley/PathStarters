@@ -14,6 +14,7 @@ and open the template in the editor.
 
 .deep_blue{
     color: #26495c;
+    
 }
 
 .light_blue{
@@ -50,8 +51,14 @@ body{
      background-color: #f2f2f2;
      background-image: url("../Images/Logos/clouds2.png");
      background-size: 100% auto;
+     
+     
 }
 
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 .header{
     
@@ -477,7 +484,7 @@ body{
 
 /*PROFILE IMAGES*/
 .kenyon{
-    background-image: url("../images/TeamPhotos/Kenyon.png");
+    background-image: url("../Images/TeamPhotos/Kenyon.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
       
@@ -485,7 +492,7 @@ body{
 
 
 .scott{
-    background-image: url("../images/TeamPhotos/Scott.png");
+    background-image: url("../Images/TeamPhotos/Scott.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
         
@@ -493,7 +500,7 @@ body{
 
 
 .neal{
-    background-image: url("../images/TeamPhotos/Neal.png");
+    background-image: url("../Images/TeamPhotos/Neal.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
         
@@ -501,7 +508,7 @@ body{
 
 
 .paul{
-    background-image: url("../images/TeamPhotos/Paul.png");
+    background-image: url("../Images/TeamPhotos/Paul.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
         
@@ -559,6 +566,25 @@ body{
 
  /* for phone*/ 
 @media screen and (max-width: 850px){
+    
+    body{
+        
+        
+    }
+    
+    html{
+                
+    }
+    
+    .logo{
+        width: 40%;
+        padding-bottom: 25%;
+           
+    }
+    
+    .our_story h2{
+        font-size: 3em;
+    }
 
     .cloud_image{
         visibility: hidden;
@@ -566,6 +592,24 @@ body{
 
     .pathway{
         font-size: 3em;
+    }
+    
+    .profile_name{
+        visibility: visible;
+    }
+    
+    .triangle{
+        visibility: visible;
+    }
+    
+    .linkedIn{
+        width: 80%;
+        padding-bottom: 20%;
+    }
+    
+    .profile{
+        width: 60%;
+        margin: auto;
     }
     
     .post_container{
@@ -601,6 +645,9 @@ body{
     .footer{
         width: 100%;
         padding-bottom: 30%;
+        background-image: none;
+        background-color: #35c5d3;
+        border-top: solid 3px #4b5254;
         
     }
     
@@ -609,7 +656,7 @@ body{
     }
     
     .footer p{
-        width:40%;
+        width:90%;
         margin: auto;
     }
 
