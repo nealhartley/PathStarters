@@ -135,17 +135,22 @@ html{
 
 /*the story block just below header*/
 .our_story{
-    border: solid 4px;
     
     
-    width: 94%;
+    
+    width: 100%;
     margin: auto;
     margin-bottom: 1em;
     background-color: white;
+    padding-bottom: 2em;
 }
+
+.story_header_container{padding-top: 2em;}
 
 .our_story h2{
     font-size: 4em;
+    display: inline-block;
+    border-bottom: solid 3px #DF0096;
     
 }
 
