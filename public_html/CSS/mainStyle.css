@@ -302,7 +302,7 @@ html{
 
 .pathway{
     font-size: 7em;
-    -webkit-margin-before: 0em !important;
+    padding-top: 0.4em;
    
 }
 
