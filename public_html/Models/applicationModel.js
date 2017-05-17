@@ -213,9 +213,16 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
     
     {
         month : 'May',
-        date : '3rd May',
+        date : '5th May',
         description : 'Today we had a hackathon style design session. This was very useful in helping us decide on a single idea and also was a great way to bring the team back together after a hectic week of interviews. Back to basics, the whole team in one room working towards the same goal. With the validation of the interviews we now feel like we are aiming towards a clear target rather than into the murky distance.'
+    },
+    
+    {
+        month : 'May',
+        date : '8th May',
+        description : 'As you know from our last post we had settled on an idea, at that point the idea was still a vague mirage on the horizon. Now we have really cemented our idea and It is a great feeling to really know what you are working towards. This has helped to cement our team together and now we are charging forward towards demo day as single unit.'
     }
+    
   ];
   
   $scope.counter = true;

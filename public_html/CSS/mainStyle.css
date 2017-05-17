@@ -84,12 +84,20 @@ html{
 
 .logo{
     
-    background-image: url("../Images/Logos/pathstarters_blu.png");
+    background-image: url("../Images/Logos/logo_pathstarters.png");
     background-size: 100% 100%;
     width: 15%;
     padding-bottom: 9%;
     margin-left: 20%;
     margin-top: 1em;
+    
+    left: 0;
+    
+}
+
+.header p{
+    display: inline-block;
+    padding-bottom: 7%; 
 }
 /*survey call to action at top of page under logo bar*/
 .survey_call_to_action{
@@ -140,7 +148,7 @@ html{
     
     width: 100%;
     margin: auto;
-    margin-bottom: 1em;
+    
     background-color: white;
     padding-bottom: 2em;
 }
@@ -160,7 +168,7 @@ html{
 
 .our_story p{
     color: #26495c;
-    width: 90%;
+    width: 60%;
     margin: auto;
     padding-bottom: 3em;
     font-weight: 500;
@@ -203,7 +211,7 @@ html{
     background-color: white;
     
     border-radius: 0.3em;
-    display: none; /*this is the css that hides the switch for community and timeline*/
+    /*display: none; /*this is the css that hides the switch for community and timeline*/
     
 }
 
@@ -411,6 +419,11 @@ html{
 /*-----------------------------------*/
 /*The view for our community and team*/
 /*-----------------------------------*/
+
+.team_cont{
+     background-color: #f2f2f2;
+}
+
 .our_team{
     
     position: absolute;
@@ -419,6 +432,12 @@ html{
         transition: visiblity 0s 1s, opacity 1s linear;
         -webkit-transition: visiblity 0s 1s, opacity 1s linear;
         -moz-transition: visiblity 0s 1s, opacity 1s linear;
+}
+
+.team_title{
+   display: inline-block;
+   font-size: 4em;
+   border-bottom: solid 3px #DF0096;
 }
 
 .profiles{
@@ -431,6 +450,12 @@ html{
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     
+}
+
+.profile_images_container h2{
+    font-size: 3em;
+    display: inline-block;
+   
 }
 
 .profile_images_container{
@@ -523,25 +548,73 @@ html{
     
 }
 
-.mentor{
+
+/*************Mentor Image/profile boxes******************/
+.mentor_image{
+    width: 80%;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.mentor_profile{
+    display: inline-block;
+    width: 15%;
+    margin-left: 1%;
+    margin-right: 1%;
+    vertical-align: top;
+}
+
+.mentor {
     width:15%;
 }
+
+.mentors{
+    margin-top: 2em;
+    padding-top: 0.5em;
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+.mentors h2{
+    font-size: 7em;
+    
+    color:#26495c;
+}
+
+/*Our contacts that we've made throught out this process'*/
+.our_contacts{
+    
+}
+
+.our_contacts h2{
+    font-size: 7em;
+}
+
+
+
 /***********************************************/
 /*                   footer                    */
 /***********************************************/
 
 .footer{
-   background-image: url("../Images/Logos/cloud.png");
-   background-size: 100% 100%;
-   width: 60%;
-   margin: auto;
-   padding-bottom: 7%;
-   color: #f2f2f2;
+   
+    width: 100%;
+    padding-bottom: 30%;
+    background-image: none;
+    background-color: #35c5d3;
+    border-top: solid 3px #4b5254;
+        
+    
+    width: 100%;
+    margin: auto;
+    padding-bottom: 7%;
+    color: #f2f2f2;
    
 }
 
 .footer h2{
-    padding-top: 20%;
+    
     color: #ED1E79;
 }
 
@@ -579,6 +652,42 @@ html{
 }
 
 
+.dave{
+    background-image: url("../Images/TeamPhotos/dave.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+.hamish{
+    background-image: url("../Images/TeamPhotos/hamish.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+.kristene{
+    background-image: url("../Images/TeamPhotos/kris.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+.ian{
+    background-image: url("../Images/TeamPhotos/ian.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+.kamal{
+    background-image: url("../Images/TeamPhotos/kamal.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        
+}
+
+
 
 /*This is the styling for the survey landing page for Paul*/
 
@@ -587,14 +696,15 @@ html{
     
 }
 
-.survey_text{padding-top: 2em;}
+.survey_text{
+    padding-top: 2em;
+    width: 60%;
+}
 
 .survey a{
     color: #ED1E79;
     display: inline-block;
     text-decoration: none;
-    
-    
 }
 
 .survey_link{
@@ -651,6 +761,18 @@ html{
         padding-bottom: 25%;
            
     }
+    
+    /*survey call to action at top of page under logo bar*/
+    .survey_call_to_action{
+        
+        background-image: url("../Images/sad_toy_stock.jpg");
+        background-size: 500% 170%;
+        background-position-y: 70%;
+        background-position-x: 80%;
+        font-size: 3em;
+        color: white;
+    }
+    
     
     .our_story h2{
         font-size: 3em;
@@ -709,6 +831,7 @@ html{
     
     .post{
         width:100%;
+        margin-left: 0;
     }
     
     
