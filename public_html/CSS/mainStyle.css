@@ -569,6 +569,12 @@ html{
     margin: auto;
 }
 
+.mentor_image:hover{
+  
+    animation: expandCircle 0.5s;
+        
+}
+
 .mentor_profile{
     display: inline-block;
     width: 15%;
@@ -1044,4 +1050,32 @@ html{
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+@keyframes expandCircle {
+    
+    20% {
+        border-radius: 40%;
+    }
+    
+    40%{
+        30%
+    }
+    
+    50% {
+        border-radius: 25%;
+    }
+    
+    75%{
+        border-radius: 30%;
+    }
+    
+    85%{
+        40%
+    }
+    
+    100%{
+        border-radius: 50%;
+    }
+    
 }
