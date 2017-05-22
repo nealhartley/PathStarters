@@ -49,7 +49,7 @@ body{
      font-family: 'Dosis', sans-serif;
      color: #4b5254;
      background-color: #f2f2f2;
-     background-image: url("../Images/Logos/clouds2.png");
+    /* background-image: url("../Images/Logos/clouds2.png");*/
      background-size: 100% auto;
      
      
@@ -159,7 +159,7 @@ html{
 .our_story h2{
     font-size: 4em;
     display: inline-block;
-    border-bottom: solid 3px #DF0096;
+    
     
 }
 
@@ -174,6 +174,7 @@ html{
     padding-bottom: 3em;
     font-weight: 500;
     text-align: justify;
+    font-size: 1.5em;
     
 }
 
@@ -301,6 +302,7 @@ html{
     position: absolute;
     width: 100%;
     
+    
         transition: visiblity 0s 1s, opacity 0.5s linear;
         -webkit-transition: visiblity 0s 1s, opacity 0.5s linear;
         -moz-transition: visiblity 0s 1s, opacity 0.5s linear;
@@ -328,8 +330,6 @@ html{
     
    
 }
-
-
 
 
 .post_container:nth-child(odd){
@@ -378,7 +378,7 @@ html{
 }
 
 .post_date{
-   border-bottom: 2px solid #ED1E79;
+   
    display: inline-block;
 }
 
@@ -435,6 +435,7 @@ html{
     
     position: absolute;
     width: 100%;
+    background-color: white;
     
         transition: visiblity 0s 1s, opacity 1s linear;
         -webkit-transition: visiblity 0s 1s, opacity 1s linear;
@@ -444,7 +445,7 @@ html{
 .team_title{
    display: inline-block;
    font-size: 4em;
-   border-bottom: solid 3px #DF0096;
+   
 }
 
 .profiles{
@@ -468,6 +469,7 @@ html{
 .profile_images_container{
     
     width: 100%;
+    padding-bottom: 2em;
 }
 
 .profile{
@@ -557,6 +559,9 @@ html{
 
 
 /*************Mentor Image/profile boxes******************/
+
+
+
 .mentor_image{
     width: 80%;
     padding-bottom: 80%;
@@ -577,21 +582,26 @@ html{
 }
 
 .mentors{
-    margin-top: 2em;
-    padding-top: 0.5em;
-    background-color: white;
+    /*margin-top: 1em;*/
+    /*padding-top: 0.5em;*/
+    background-color: #f2f2f2;
     padding-bottom: 2em;
 }
 
 .mentors h2{
     font-size: 7em;
-    
+    padding-bottom: 1em;
+    padding-top: 1.2em;
     color:#26495c;
+    
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    
 }
 
 /*Our contacts that we've made throught out this process'*/
 .our_contacts{
-    
+    padding-bottom: 5em;
 }
 
 .our_contacts h2{
@@ -610,7 +620,7 @@ html{
     padding-bottom: 30%;
     background-image: none;
     background-color: #35c5d3;
-    border-top: solid 3px #4b5254;
+   
         
     
     width: 100%;
@@ -621,8 +631,13 @@ html{
 }
 
 .footer h2{
-    
+    padding-top: 2em;
     color: #ED1E79;
+    
+     -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    
+    
 }
 
 
@@ -697,8 +712,9 @@ html{
 /*this is the styling for our CONTACTS*/
 .contacts{
     display: inline-block;
-    width: 25%;
+    width: 20%;
     height:10em;
+    margin: 3%;
     
 }
 

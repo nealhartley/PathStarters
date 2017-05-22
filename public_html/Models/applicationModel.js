@@ -221,6 +221,18 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
         month : 'May',
         date : '8th May',
         description : 'As you know from our last post we had settled on an idea, at that point the idea was still a vague mirage on the horizon. Now we have really cemented our idea and It is a great feeling to really know what you are working towards. This has helped to cement our team together and now we are charging forward towards demo day as single unit.'
+    },
+    
+    {
+        month : 'May',
+        date : '15th May',
+        description : 'Today we are feeling really strong as a team. It seems like we are in a really good position going forward in this process.'
+    },
+    
+    {
+        month : 'May',
+        date : '8th May',
+        description : 'We met with our mentors today and talked business plan. It was really informative and we benefitted hugely from their depth of experience. We seem to all be on the same page in terms of what our business would look like if we make it to that stage.'
     }
     
   ];
