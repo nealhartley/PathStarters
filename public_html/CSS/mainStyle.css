@@ -262,6 +262,7 @@ html{
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
+    
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important;
 }
@@ -271,9 +272,9 @@ html{
     color: #f2f2f2;
     opacity: 1;
     
-        transition: opacity 0.5s linear;
-        -webkit-transition: opacity 0.5s linear;
-        -moz-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
     
 }
 
@@ -282,9 +283,9 @@ html{
     display: none;
     opacity: 0;
     
-        transition: opacity 0.5s linear;
-        -webkit-transition: opacity 0.5s linear;
-        -moz-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
 }
 
 /*styling for the container that holds the timeline and community*/
@@ -295,17 +296,46 @@ html{
     height: fit-content;
 }
 
-/*blog view*/
+/*               blog view                   */
 
+
+.scroll_link{
+    background-color: white;
+    border-radius: 1em;
+    display: inline-block;
+    margin: auto;
+    padding: 1em 2em 1em 2em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;  
+    -webkit-transition: box-shadow 0.3s ease-in-out; 
+    -moz-transition: box-shadow 0.3s ease-in-out;
+}
+
+.scroll_link:hover{
+   transform:translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.scroll_link:link{
+    text-decoration: none;
+    color: #4b5254;
+   
+}
+
+.scroll_link:visited{
+    color: #4b5254;
+}
 
 .pathway_container{
     position: absolute;
     width: 100%;
     
-    
-        transition: visiblity 0s 1s, opacity 0.5s linear;
-        -webkit-transition: visiblity 0s 1s, opacity 0.5s linear;
-        -moz-transition: visiblity 0s 1s, opacity 0.5s linear;
+    transition: visiblity 0s 1s, opacity 0.5s linear;
+    -webkit-transition: visiblity 0s 1s, opacity 0.5s linear;
+    -moz-transition: visiblity 0s 1s, opacity 0.5s linear;
 }
 
 
@@ -327,8 +357,6 @@ html{
     height: auto;
     position: relative;
     float: left;
-    
-   
 }
 
 
@@ -337,14 +365,12 @@ html{
     width:52%;
     height: auto;
     position: relative;
-
 }
 
 .post_container:nth-child(odd) .post{
    
     margin-left: 0;
     float: left;
-  
 }
 
 
@@ -367,8 +393,6 @@ html{
     transition: box-shadow 0.3s ease-in-out;  
     -webkit-transition: box-shadow 0.3s ease-in-out; 
     -moz-transition: box-shadow 0.3s ease-in-out;
-    
-    
 }
 
 .post:hover{
@@ -394,17 +418,12 @@ html{
     
     width: 10%;
     
-    
     top:1em;
     left:45%;
-    
-  
 }
 
 .line{
     height: 100%;
-    
-    
 }
 
 
@@ -437,9 +456,9 @@ html{
     width: 100%;
     background-color: white;
     
-        transition: visiblity 0s 1s, opacity 1s linear;
-        -webkit-transition: visiblity 0s 1s, opacity 1s linear;
-        -moz-transition: visiblity 0s 1s, opacity 1s linear;
+    transition: visiblity 0s 1s, opacity 1s linear;
+    -webkit-transition: visiblity 0s 1s, opacity 1s linear;
+    -moz-transition: visiblity 0s 1s, opacity 1s linear;
 }
 
 .team_title{
@@ -457,17 +476,14 @@ html{
     font-size: 7em;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    
 }
 
 .profile_images_container h2{
     font-size: 3em;
     display: inline-block;
-   
 }
 
 .profile_images_container{
-    
     width: 100%;
     padding-bottom: 2em;
 }
@@ -476,14 +492,10 @@ html{
     display: inline-block;
     vertical-align: bottom;
     width: 20%;
-    
-    
 }
 
 .profile:hover{
-    
     vertical-align: top;
-   
 }
 
 .profile:hover .profile_image{
@@ -495,7 +507,6 @@ html{
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     background-color: white;
-
 }
 
 .triangle{
@@ -511,11 +522,9 @@ html{
     background-color: white;
     border-radius: 0.5em;
     visibility: visible;
-    
 }
 
 .profile:hover .triangle{
-    
     visibility: visible;
 }
 
@@ -525,7 +534,6 @@ html{
     color: #979797;
     -webkit-margin-before: 0.5em;
     -webkit-margin-after: 0.5em;
-    
 }
 
 .linkedIn{
@@ -534,15 +542,9 @@ html{
     background-image: url("../Images/Logos/linkedinfull.png");
     background-size: 100% 100%;
     
-   
-   
     margin: auto;
     margin-bottom: 0.5em;
     z-index: 10;
-    
-   
-    
-       
 }
 
 .linkedIn a{
@@ -550,11 +552,9 @@ html{
 }
 
 .profile_image{
-    
     width: 50%;
     padding-bottom: 90%;
     margin: auto;
-    
 }
 
 
@@ -570,9 +570,7 @@ html{
 }
 
 .mentor_image:hover{
-  
     animation: expandCircle 0.5s;
-        
 }
 
 .mentor_profile{
@@ -602,7 +600,6 @@ html{
     
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    
 }
 
 /*Our contacts that we've made throught out this process'*/
@@ -621,29 +618,23 @@ html{
 /***********************************************/
 
 .footer{
-   
     width: 100%;
     padding-bottom: 30%;
     background-image: none;
     background-color: #35c5d3;
    
-        
-    
     width: 100%;
     margin: auto;
     padding-bottom: 7%;
     color: #f2f2f2;
-   
 }
 
 .footer h2{
     padding-top: 2em;
     color: #ED1E79;
     
-     -webkit-margin-before: 0em;
+    -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    
-    
 }
 
 
@@ -652,7 +643,6 @@ html{
     background-image: url("../Images/TeamPhotos/Kenyon.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-      
 }
 
 
@@ -660,7 +650,6 @@ html{
     background-image: url("../Images/TeamPhotos/Scott.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 
@@ -668,7 +657,6 @@ html{
     background-image: url("../Images/TeamPhotos/Neal.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 
@@ -676,7 +664,6 @@ html{
     background-image: url("../Images/TeamPhotos/Paul.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 
@@ -684,35 +671,30 @@ html{
     background-image: url("../Images/TeamPhotos/dave.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 .hamish{
     background-image: url("../Images/TeamPhotos/hamish.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 .kristene{
     background-image: url("../Images/TeamPhotos/kris.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 .ian{
     background-image: url("../Images/TeamPhotos/ian.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 .kamal{
     background-image: url("../Images/TeamPhotos/kamal.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        
 }
 
 /*this is the styling for our CONTACTS*/
@@ -721,7 +703,6 @@ html{
     width: 20%;
     height:10em;
     margin: 3%;
-    
 }
 
 .ACC{
@@ -796,17 +777,12 @@ html{
     background-size: 100% 100%;
 }
 
-.workwise{
-    background-image: url("../Images/ContactsLogos/workwise.png");
-    padding-bottom: 10em;
-    background-size: 100% 100%;
-}
+
 
 /*This is the styling for the survey landing page for Paul*/
 
 .survey{
     padding-bottom: 1.5em;
-    
 }
 
 .survey_text{
@@ -823,9 +799,7 @@ html{
 .survey_link{
     margin-top: 1em;
     margin-bottom: 1em;
-    
     border-radius: 1em;
-    
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.3s ease-in-out;  
     -webkit-transition: box-shadow 0.3s ease-in-out; 
@@ -837,17 +811,13 @@ html{
 }
 
 .survey_link h2{
-    
-   
     -webkit-margin-before: 0em !important;
     -webkit-margin-after: 0em !important;
     padding: 0.2em 0.2em 0.2em 0.2em;
-    
 }
 
 .survey a:hover{
     color: #35c5d3;
-   
 }
 
 .touch_us{
@@ -872,12 +842,10 @@ html{
     .logo{
         width: 40%;
         padding-bottom: 25%;
-           
     }
     
     /*survey call to action at top of page under logo bar*/
     .survey_call_to_action{
-        
         background-image: url("../Images/sad_toy_stock.jpg");
         background-size: 500% 170%;
         background-position-y: 70%;
@@ -920,41 +888,29 @@ html{
     /*the switch*/
     
     .slider_container{
-    width: 80%;
-    margin: auto;
-  
-  
-    
-  
-    
-}
+        width: 80%;
+        margin: auto;
+    }
 
-.timeline_button{
-    width:49%;
- 
-    font-size: 1em;
- 
-}
+    .timeline_button{
+        width:49%;
+        font-size: 1em;
+    }
 
 
-.community_button{
-    width:49%;
-   
-    font-size: 1em;
- 
-}
+    .community_button{
+        width:49%;
+        font-size: 1em;
+    }
     
     
     /*the blog view when switched to blog view*/
     
     .pathway{
         font-size: 3em;
-        
-        
     }
     
     .post_container{
-        
         width: 100%;
         margin: auto;
         margin-bottom: 1em;
@@ -966,10 +922,8 @@ html{
     }
     
     .post_body{
-        
         width:90%;
         padding-left: 5%;
-        
     }    
     
     .post{
@@ -977,11 +931,11 @@ html{
         margin-left: 0;
     }
     
-    
-    
     .post_container svg{
         display: none;
     }
+    
+
     
     /*main body when switched to ocmmunity*/
     .mentors h2{
@@ -1003,10 +957,9 @@ html{
     }
     
     .contacts{
-    display: inline-block;
-    width: 80%;
-    height:10em;
-    
+        display: inline-block;
+        width: 80%;
+        height:10em;
     }
     
     /*footer*/
@@ -1017,7 +970,6 @@ html{
         background-image: none;
         background-color: #35c5d3;
         border-top: solid 3px #4b5254;
-        
     }
     
     .footer h2{
@@ -1035,21 +987,21 @@ html{
 /*animation keyframes*/
 
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
 }
 
 @keyframes expandCircle {
@@ -1059,7 +1011,7 @@ html{
     }
     
     40%{
-        30%
+        border-radius: 30%
     }
     
     50% {
@@ -1071,7 +1023,7 @@ html{
     }
     
     85%{
-        40%
+        border-radius: 40%
     }
     
     100%{

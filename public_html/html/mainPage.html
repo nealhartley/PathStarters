@@ -28,7 +28,7 @@ and open the template in the editor.
     
     <body>
         <!--Header bar for the site-->
-        <div class = "header">
+        <div class = "header" id = "header">
             <!--the background for the header will be the balloon and we will shift it right-->
             
             <div class = "logo"></div>
@@ -186,7 +186,13 @@ and open the template in the editor.
             <!--the container for the pathway view-->
             <div class = "pathway_container" ng-controller="PathwayController">
                 <h2 class = "pathway deep_blue">OUR PATHWAY</h2>
-
+                
+               
+                    <a class = "scroll_link most_recent" href = "#pitch_day">
+                        Press for Most Recent
+                    </a>
+                
+                              
                 <!--each month needs to be its own thing. each needs it index as a class in order to access the expanding svg line-->
                 <div class = "month_container {{$index}}" ng-repeat="month in months">
                     <h2 class = "month deep_blue">{{month.name}}</h2>
@@ -245,7 +251,7 @@ and open the template in the editor.
                     {{setCounter(true);}}
                     
                     
-                    <svg class="vertical_line" width="40%" height="100%" >
+                    <svg class="vertical_line" id="vertical_line" width="40%" height="100%" >
                        
                         <line class ="line" x1="50%" y1="25" x2="50%" y2="95%" stroke="#26495c" stroke-width="5"></line>
                         <!--top circle-->
@@ -268,8 +274,11 @@ and open the template in the editor.
                 </div>
                 <h3 class = "pitch_date">8th June</h3>
                 
-                <h2 class= "pitch_month deep_blue">PITCH DAY</h2>
+                <h2 class= "pitch_month deep_blue" id = "pitch_day">PITCH DAY</h2>
                 
+                <a class = "scroll_link back_to_top" href = "#header">
+                    Back to top
+                </a>
               
             </div>
 
@@ -397,16 +406,13 @@ and open the template in the editor.
                         <div class = "work_and_income"></div>
                     </div>
                     
-                    
-                    
-                    <div class = "contacts">
-                        <div class = "workwise"></div>
-                    </div>
-                                                          
+                                                         
 
                 </div>    
             </div>
         </div>      
+        
+        
        
         <div class = "footer">
                 <h2>CONTACT US</h2>
