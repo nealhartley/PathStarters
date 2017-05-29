@@ -231,8 +231,26 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
     
     {
         month : 'May',
-        date : '8th May',
+        date : '17th May',
         description : 'We met with our mentors today and talked business plan. It was really informative and we benefitted hugely from their depth of experience. We seem to all be on the same page in terms of what our business would look like if we make it to that stage.'
+    },
+    
+    {
+        month : 'May',
+        date : '19th May',
+        description : 'Last night the accelerator put on a fantastic event for everyone working in the space. Slideshow Karaoke Extravaganza was the name they gave to the event and essentially the event was a competition where each person had to pitch with a random slide deck. We are proud to say that our very own Neal took home the top prize. This is another great example of the many diverse talents we all bring to the team.'
+    },
+    
+    {
+        month : 'May',
+        date : '24th May',
+        description : 'We’ve been meeting with really interesting people who belong to fantastic organisations. Last week, we took time out of the office to meet with the Health and Disability Commissioner who was really interested in our story. This week we met with the Health Promotion Agency who will support us on our journey.  It is an amazing feeling having such great organisations getting behind what we are doing.'
+    },
+    
+    {
+        month : 'May',
+        date : '26th May',
+        description : 'Continuous improvement has been at the heart of everything we have done during this programme. This week we completed a design sprint.  It was really challenging but helped us to refine our pitch and proposal.'
     }
     
   ];
