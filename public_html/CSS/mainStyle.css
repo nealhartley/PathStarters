@@ -589,7 +589,7 @@ html{
     /*margin-top: 1em;*/
     /*padding-top: 0.5em;*/
     background-color: #f2f2f2;
-    padding-bottom: 2em;
+    /*padding-bottom: 2em;*/
 }
 
 .mentors h2{
@@ -600,6 +600,11 @@ html{
     
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    -moz-margin-before: 0em;
+    -moz-margin-after: 0em;
+    margin-top: 0;
+    
+    
 }
 
 /*Our contacts that we've made throught out this process'*/
@@ -611,7 +616,14 @@ html{
     font-size: 7em;
 }
 
+.contacts{
+    
+}
 
+.contacts:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
 /***********************************************/
 /*                   footer                    */
@@ -635,6 +647,7 @@ html{
     
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    margin-top: 0;
 }
 
 
