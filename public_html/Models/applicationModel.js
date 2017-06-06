@@ -26,6 +26,10 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
     
     {
         name: 'May'
+    },
+    
+    {
+        name: 'June'
     }
   ];
   
@@ -251,6 +255,18 @@ PathwayApp.controller('PathwayController', function PathwayController($scope) {
         month : 'May',
         date : '26th May',
         description : 'Continuous improvement has been at the heart of everything we have done during this programme. This week we completed a design sprint.  It was really challenging but helped us to refine our pitch and proposal.'
+    },
+    
+    {
+        month: 'May',
+        date: '31st',
+        description: 'We had our last advisory board meeting before pitch day. It all went well and everyone is confident in us going forward. It has been amazing having this group of people advising us throughout this initial process and we look forward to having them on board for whatever comes next.'
+    },
+    
+    {
+        month: 'June',
+        date: '5th',
+        description: 'Look at the dedication. Half the team in the office even though it is a public holiday. We are just so passionate about this opportunity and we do not want it to go to waste.'
     }
     
   ];
